@@ -1,11 +1,11 @@
-const Card = () => {
-    return( <div class="card">
-   <img src="..." class="card-img-top" alt="..."/>
-    <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+const Card = ({cardtitle="cupcake", url="https://belleofthekitchen.com/wp-content/uploads/2015/11/hot-chocolate-cupcakes-marshmallow-buttercream2-300x436.jpg"}) => {
+    return( <div className="card">
+   <img src={url} className="card-img-top" alt="..."/>
+    <div className="card-body">
+    <h5 className="card-title">{cardtitle}</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     </div>
-  <div class="card-footer text-body-secondary"><button type="button" class="btn btn-primary">Primary</button></div>
+  <div className="card-footer text-body-secondary"><button type="button" class="btn btn-primary">Primary</button></div>
 </div>)
 }
 export default Card
